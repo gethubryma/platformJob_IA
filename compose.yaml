@@ -1,0 +1,14 @@
+
+name: job-platform-ai
+
+services:
+  python-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    image: job-platform-ai:0.1
+
+    working_dir: /app
+
+    command: ["python", "-m", "pytest", "-v"]

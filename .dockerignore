@@ -1,0 +1,38 @@
+
+# Git
+.git
+.github
+
+# Configuration privée
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__
+**/__pycache__
+*.pyc
+.venv
+venv
+.pytest_cache
+.ruff_cache
+
+# Frontend
+node_modules
+**/node_modules
+.next
+**/.next
+
+# Configuration locale
+.vscode
+
+# Données personnelles
+data/
+uploads/
+private/
+*.pem
+*.key
+
+# Logs
+*.log
+logs/

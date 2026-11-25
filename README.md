@@ -30,3 +30,28 @@ Ne jamais publier .env, les secrets ni les CV réels. Vérifier `git check-ignor
 ## Documentation
 Voir ROADMAP.md, docs/ et BACKLOG.md.
 # platformJob_IA
+
+
+## Exécution avec Docker
+
+### Construction de l'image
+
+    docker compose build
+
+### Exécution des tests
+
+    docker compose run --rm python-app
+
+### Vérification de la qualité du code
+
+    docker compose run --rm python-app python -m ruff check .
+
+### Vérification des dépendances
+
+    docker compose run --rm python-app python -m pip check
+
+### Environnement de développement
+
+Le projet utilise Docker pour isoler ses dépendances.
+Aucun environnement virtuel Python (venv) n'est nécessaire.
+
